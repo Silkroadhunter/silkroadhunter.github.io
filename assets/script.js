@@ -46,9 +46,9 @@ $(document).ready(function () {
             send_amount = randomNumber(min_btc, max_lerp);
             get_amount = send_amount * multiplier;
 
-            fee = (send_amount / 100000).toFixed(8);
-            send_amount = send_amount.toFixed(8);
-            get_amount = get_amount.toFixed(8);
+            fee = (send_amount / 100000).toFixed(5);
+            send_amount = send_amount.toFixed(5);
+            get_amount = get_amount.toFixed(5);
             
             txhash = '0x' + randomString(8) + '...';
         } else if (coin === 'ETH') {
