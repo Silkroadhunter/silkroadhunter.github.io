@@ -39,7 +39,7 @@ $(document).ready(function () {
         let fee = 0;
 
         if (coin === 'BTC') {
-            wallet_from = '1' + randomString(11) + "...";
+            wallet_from = '0x' + randomString(11) + "...";
             wallet_to = wallet_btc;
             
             const max_lerp = lerp(min_btc, max_btc, 0.05);
@@ -50,7 +50,7 @@ $(document).ready(function () {
             send_amount = send_amount.toFixed(8);
             get_amount = get_amount.toFixed(8);
             
-            txhash = randomString(10) + '...';
+            txhash = '0x' + randomString(8) + '...';
         } else if (coin === 'ETH') {
             wallet_from = '0x' + randomString(11) + "...";
             wallet_to = wallet_eth;
