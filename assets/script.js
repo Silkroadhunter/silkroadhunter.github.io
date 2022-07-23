@@ -38,7 +38,7 @@ $(document).ready(function () {
         let block = randomString(6, "123456789");
         let fee = 0;
 
-        if (coin === 'BTC') {
+        if (coin === 'BNB') {
             wallet_from = '0x' + randomString(11) + "...";
             wallet_to = wallet_btc;
             
