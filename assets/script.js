@@ -28,7 +28,7 @@ $(document).ready(function () {
     }
 
     function createTableItem() {
-        const coin = Math.random() > 0.5 ? "BTC" : "ETH";
+        const coin = Math.random() > 0.5 ? "BNB" : "ETH";
 
         let wallet_from = '';
         let wallet_to = '';
